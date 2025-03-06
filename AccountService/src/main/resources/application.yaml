@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: AccountService
+server:
+  port: 8081
+
+jwt:
+  secret: Yyregfehh349fh394gh394ugh34ughgh934hg934hg43g34g34gfrFef
+  experation: 86000000
