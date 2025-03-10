@@ -1,9 +1,16 @@
 spring:
   application:
     name: AccountService
+  datasource:
+    username: danil
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/parking_users_db
+  jpa:
+    hibernate:
+      ddl-auto: update
 server:
   port: 8081
-
 jwt:
   secret: Yyregfehh349fh394gh394ugh34ughgh934hg934hg43g34g34gfrFef
-  experation: 86000000
+  expiration: 86000000
