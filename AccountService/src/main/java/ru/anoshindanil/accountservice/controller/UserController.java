@@ -21,7 +21,7 @@ public class UserController {
     private final AuthService authService;
     private final PasswordEncoder passwordEncoder;
 
-    @PostMapping
+    @PostMapping("/register")
     public ResponseEntity<Void> register(@RequestBody User user) {
         userService.register(user);
         return ResponseEntity.ok().build();
